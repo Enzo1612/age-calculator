@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="mainContainer">
+        <div class="formContainer">
+          <div class="formInputContainer">
+            <p class="inputName" id="inputNameDay">DAY</p>
+            <input
+              type="text"
+              name="DAY"
+              id="dayInput"
+              class="inputText"
+              placeholder="DD"
+            />
+            <p id="dayError" class="error"></p>
+          </div>
+          <div class="formInputContainer">
+            <p class="inputName" id="inputNameMonth">MONTH</p>
+            <input
+              type="text"
+              name="MONTH"
+              id="monthInput"
+              class="inputText"
+              placeholder="MM"
+            />
+            <p id="monthError" class="error"></p>
+          </div>
+          <div class="formInputContainer">
+            <p class="inputName" id="inputNameYear">YEAR</p>
+            <input
+              type="text"
+              name="YEAR"
+              id="yearInput"
+              class="inputText"
+              placeholder="YYYY"
+            />
+            <p id="yearError" class="error"></p>
+          </div>
+        </div>
+        <div class="dateContainer">
+          <p class="dateP">
+            <span class="dateNum" id="dateYears">--</span> years
+          </p>
+          <p class="dateP">
+            <span class="dateNum" id="dateMonths">--</span> months
+          </p>
+          <p class="dateP">
+            <span class="dateNum" id="dateDays">--</span> days
+          </p>
+        </div>
+      </div>
+      <div id="arrowContainer">
+        <img src="./assets/images/icon-arrow.svg" alt="arrow" id="arrow" />
+      </div>
+    </main>
+  </body>
+</html>
